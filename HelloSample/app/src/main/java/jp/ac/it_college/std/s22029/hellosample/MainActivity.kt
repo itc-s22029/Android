@@ -56,4 +56,4 @@ class MainActivity : AppCompatActivity() {
             binding.tvOutout.text = "${inputStr}さん、こんにちは"
         }
     }
-}
+}}
