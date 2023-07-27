@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "jp.ac.it_college.std.s22029.constraintlayout"
+    namespace = "jp.ac.it_college.std.s22029.constraintlayoutsample"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "jp.ac.it_college.std.s22029.constraintlayout"
+        applicationId = "jp.ac.it_college.std.s22029.constraintlayoutsample"
         minSdk = 29
         targetSdk = 33
         versionCode = 1

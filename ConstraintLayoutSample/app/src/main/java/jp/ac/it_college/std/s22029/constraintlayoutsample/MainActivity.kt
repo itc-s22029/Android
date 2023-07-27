@@ -1,4 +1,4 @@
-package jp.ac.it_college.std.s22029.constraintlayout
+package jp.ac.it_college.std.s22029.constraintlayoutsample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
