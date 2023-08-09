@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import jp.ac.it_college.std.s22029.intentsample.databinding.ActivityMainBinding
-class MainActivity : AppCompatActivity() {
+class MainActivity: AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
