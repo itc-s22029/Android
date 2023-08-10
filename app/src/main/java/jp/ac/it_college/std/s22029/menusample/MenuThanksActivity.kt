@@ -2,6 +2,7 @@ package jp.ac.it_college.std.s22029.menusample
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import jp.ac.it_college.std.s22029.menusample.databinding.ActivityMenuThanksBinding
 
 class MenuThanksActivity : AppCompatActivity() {
@@ -11,6 +12,9 @@ class MenuThanksActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMenuThanksBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Toolbar を ActionBar として使う
+        setSupportActionBar(binding.toolbar)
 
         // 前の画面から渡ってくるであろうデータを取り出す
         val menuName = intent.getStringExtra("menuName") ?: ""
@@ -24,5 +28,20 @@ class MenuThanksActivity : AppCompatActivity() {
         binding.btThxBack.setOnClickListener {
             finish()
         }
+
+        // アクションバーの戻るボタン(←)を表示させる。
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        val result = when (item.itemId) {
+            android.R.id.home -> {
+                finish()
+                true
+            }
+
+            else -> super.onOptionsItemSelected(item)
+        }
+        return result
     }
 }
