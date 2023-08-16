@@ -9,6 +9,7 @@ import jp.ac.it_college.std.s22029.lifecyclesample.databinding.ActivitySubBindin
 
 class SubActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySubBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         Log.i("LifeCycleSample", "Sub onCreate() called.")
         super.onCreate(savedInstanceState)
@@ -16,6 +17,7 @@ class SubActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btPrevious.setOnClickListener(::onPreviousClick)
+
     }
 
     override fun onStart() {
